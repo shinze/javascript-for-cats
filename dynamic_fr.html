@@ -27,7 +27,7 @@
                       ## Une introduction pour les programmeurs débutants <span class="right">![cat](images/substack-cats.png)</span>
                       ### *Si simple que même votre compagnon humain peut le pratiquer*
 
-                      Javascript est un langage de programmation ou, en d’autres termes, un moyen par lequel on demande à un ordinateur de faire des trucs. De la même manière que certains contrôlent des humains par leurs feulements et autres miaulements, certains contrôlent un ordinateur avec des ordres écrits dans un langage de programmation. Tous les navigateurs comprennent JavaScript et vous pouvez en profiter pour que vos pages web fassent des choses insensées !
+                      Javascript est un langage de programmation ou, en d’autres termes, un moyen par lequel on demande à un ordinateur de faire des trucs. De la même manière que certains contrôlent des humains par leurs feulements et autres miaulements, certains contrôlent un ordinateur avec des ordres écrits dans un langage de programmation. Tous les navigateurs comprennent JavaScript et vous pouvez en profiter pour que vos pages web fassent des choses insensées&#8239;!
 
                       Javascript a débuté en tant que langage de programmation permettant de rendre les pages web plus interactives. De nos jours JavaScript ne se retrouve plus seulement dans les navigateurs mais sur des serveurs web, des téléphones et [même des robots](http://jsfiddle.net/rwaldron/WZkn5/show/light/)
 
@@ -47,59 +47,58 @@
                       - [Les objets](#objects)
                       - [À lire](#recommended-reading)
 
-                      Si vous ne souhaitez pas lire tout ça maintenant, <a href="javascript-for-cats_fr.pdf">voici une version PDF</head> que vous pouvez conserver pour plus tard.
+                      Si vous ne souhaitez pas lire tout ça maintenant, <a href="javascript-for-cats_fr.pdf">voici une version PDF</a> que vous pouvez conserver pour plus tard.
 
                       ## Ne soyez pas une poule mouillée
 
-                      <span class="right">![Chat](images/yarnify.png)</span>Vous retomberez toujours sur vos pattes — même en programmation ! Ce n’est pas comme de [renverser un verre d’eau](images/dealwithit.gif) sur votre portable, dans ces tutoriels _rien_ n’abimera ou ne détruira votre ordinateur, même si vous ne tapez pas bien une commande ou même si vous cliquez sur le mauvais bouton. Comme les chats, les développeurs font des erreurs tout le temps: des fautes de frappes, ils oublient facilement les guillemets, les parenthèses et comment fonctionnent les fonctions les plus simples. Les développeurs s’intéressent plus à obtenir un finalement un truc qui marche plutôt qu’à le faire marcher du premier coup. Le meilleur moyen d’apprendre est en faisant des erreurs!
+                      <span class="right">![Chat](images/yarnify.png)</span>Vous retomberez toujours sur vos pattes — même en programmation&#8239;! Ce n’est pas comme de [renverser un verre d’eau](images/dealwithit.gif) sur votre portable, dans ces tutoriels _rien_ n’abimera ou ne détruira votre ordinateur, même si vous ne tapez pas bien une commande ou même si vous cliquez sur le mauvais bouton. Comme les chats, les développeurs font des erreurs tout le temps: des fautes de frappes, ils oublient facilement les guillemets, les parenthèses et comment marchent les fonctions les plus simples. Les développeurs s’intéressent plus à obtenir _finalement_ un truc qui marche plutôt qu’à le faire marcher du premier coup. La meilleure manière d’apprendre est en faisant des erreurs&#8239;!
 
-                      Donc, ne soyez pas une poule mouillée! La pire chose qu’il puisse vous arriver est que vous ayez à rafraîchir
-                      cette page dans votre navigateur si vous êtes bloqué. Ne vous inquiétez pas cependant, cela arrivera très rarement
-                      — et (RÉFÉRENCE ? Rareté du chat à treize doigts ?)
+                      Donc, ne soyez pas une poule mouillée&#8239;! La pire chose qu’il puisse vous arriver si vous êtes bloqué est que vous ayez à actualiser cette page. Ne vous inquiétez pas cependant, cela arrivera très rarement.
 
                       ## <a id="basics" href="#basics">#</a> Les bases
 
-                      Du JavaScript tourne actuellement sur cette page! Amusons-nous un peu avec. Pour des raisons de simplicité
+                      Du JavaScript tourne actuellement sur cette page&#8239;! Amusons-nous un peu avec. Pour des raisons de simplicité
                       je pars du principe que vous utilisez Google Chrome pour lire cette page (si ce n’est pas le cas ce serait peut-être plus simple que vous poursuiviez avec Chrome).
 
                       Pour commencer, un clic droit n’importe ou sur l’écran et sélectionnez **Procéder à l’inspection de l’élément**, puis cliquez sur l’onglet **Console**. Vous devriez voir quelques chose qui ressemble à ça :
 
-                      ![console](images/console.png)
+                      ![console](images/console_fr.png)
 
                       C’est une console, connue aussi sous le nom de «ligne de commande» ou «terminal». Un moyen simple de taper
                       une chose après l’autre dans un ordinateur pour que l’ordinateur réponde. C’est un outil indispensable pour apprendre (j’utilise la console quasiment à chaque fois que je code).
 
-                      La console fait des trucs assez cool. Dans l’exemple précédent, j’ai commencé à taper quelque chose et la console m’assiste en me donnant une liste des choses que je peux taper! Autre chose que vous pouvez faire c’est de taper `1 + 1` dans la console, de taper la touche `Entrée` et d’observer ce qu’il se passe.
+                      La console fait des trucs assez cools. Dans l’exemple précédent, j’ai commencé à taper quelque chose et la console m’assiste en me donnant une liste des choses que je peux taper&#8239;! Autre chose que vous pouvez faire c’est de taper `1 + 1` dans la console, de taper la touche `Entrée` et d’observer ce qu’il se passe.
 
-                      L’utilisation de la console est important dans l’apprentissage de JavaScript. Si vous ne savez pas si un truc marche ou quelle est la commande pour un truc en particulier, allez à la console et découvrez-le ! Voici un exemple:
+                      L’utilisation de la console est important dans l’apprentissage de JavaScript. Si vous ne savez pas si un truc marche ou quelle est la commande pour un truc en particulier, allez à la console et découvrez-le&#8239;! Voici un exemple:
 
                       ### <a id="strings" href="#strings">#</a> Les chaînes
 
                       En tant que chat je veux remplacer toutes les instances du mot `chien` présentes sur Internet par `ces foutus chiens`. Tout d’abord allez dans la console et tapez quelques phrases contenant le mot `chien` au moins une fois. En Javascript, un ensemble de lettres, chiffres ou n’importe quoi d’autre est une **chaîne** (comme dans une *chaîne* de caractères). Les chaînes doivent commencer ET finir par une guillemet. Simple `'` ou double `"` ce sera parfait, assurez-vous d’utiliser la même chose à la fin qu’au début.
 
-                      ![console](images/console-strings.png)
+                      ![console](images/console-strings_fr.png)
 
-                      Vous voyez ce foutu message d’erreur ? Ne vous inquiétez pas, vous n’avez pas enfreint la loi. *SyntaxError ILLEGAL* c’est juste la manière avec laquelle les robots signalent qu’un programme a un problème. Les deux premières phrases ont des guillemets identiques au début comme à la fin, mais quand je mélange les guillemets simples et double il se met à paniquer.
+                      Vous voyez cet horrible message d’erreur ? Ne vous inquiétez pas, vous n’avez pas enfreint la loi. *SyntaxError ILLEGAL* c’est juste la manière avec laquelle les robots signalent qu’un programme a un problème. Les deux premières phrases ont des guillemets identiques au début comme à la fin, mais quand je mélange les guillemets simples et double il se met à paniquer.
 
-                      OK, to fix up one of these sentences (by replacing `dog` with our enhanced version) we have to first save the original sentence so that we can call it up later when we do our replacing magic. Notice how the string gets repeated in red when we type it into the console? This is because we haven't told it to save the sentence anywhere so it just gives it right back (or it gives us an Error back if we messed something up).
+                      Bon, pour corriger une de ces phrases (en remplaçant `chien` par notre version améliorée) nous devons tout d’abord enregistrer l’enregistrer pour la rappeler plus tard quand nous ferons notre remplacement magique. Avez-vous noté que les phrases sont répétées en rouge quand nous les saisissons dans la console? C’est parce que nous ne lui avons pas demandé de stocker la phrase ou que ce soit et il nous la rend tout simplement (ou il nous renvoit une erreur si on a fait une bêtise).
 
-                      ### <a id="values" href="#values">#</a> Values and variables
+                      ### <a id="values" href="#values">#</a> Valeur et variables
 
-                      **Values** are the simplest components in JavaScript. `1` is a value, `true` is a value, `"hello"` is a value, `function() {}` is a value, the list goes on! There are a handful of different **types** of values in JavaScript but we don't need to go over them all right away &mdash; you will learn them naturally the more you code!
 
-                      To store values we use things called **variables**. The word 'variable' means 'can change' and is used because variables can store many different types of values and can change their value many times. They are pretty much like mailboxes. We put something in a variable, like our sentence, and then give the variable an address that we can use to look up the sentence later. In real life mailboxes have to have PO Box numbers but in JavaScript you usually just use lowercase letters or numbers without any spaces.
+                      Les **valeurs** sont les composants les plus simples de JavaScript. `1` est une valeur, `true` est une valeur, `"Bonjour"` est une valeur, `function() {}` est une valeur, la liste continue&#8239;! Il y a un poignée de différents **types** de valeurs en JavaScript mais nous n’avons pas besoin de les passer en revue dès maintenant &mdash; plus vous coderez et plus vous en découvrirez&#8239;!
+
+                      Pour conserver des valeurs nous utilisons des machins appelées **variables**. Le mot 'variable' signifie 'peut changer' et sont utilisées car on peut y stocker une large variété de valeurs et il est possible de changer leur valeur un grand nombre de fois. Elles sont comparables à des boîtes à lettres. Nous déposons quelque chose dans cette variable, comme notre phrase et on fournit à cette variable une adresse de telle manière que l’on puisse retrouver cette phrase plus tard. Dans la vie réelle une boîte à lettres a une adresse et un code postal mais en JavaScript on utilise habituellement des lettres minuscules ou des chiffres sans aucun espace.
 
                       ![console](images/console-variables.png)
 
-                      `var` is shorthand for variable and the `=` means *store the thing on the right-hand side in the thing on the left-hand side*. Also as you can see, now that we are storing our sentence in a variable the console doesn't just return our sentence right away, but instead gives us `undefined` which means *there was nothing to return*.
+                      `var`est un raccourci pour variable et le `=` signifie que l’on *stocke le truc situé à droite dans le truc de gauche*. Et comme vous pouvez voir, alors que nous enregistrons notre phrase dans une variable la console ne nous renvoit pas la phrase, mais nous balance un `undefined` ce qui signifie `rien a renvoyer`.
 
-                      If you simply type a variable name into the console it will print out the value stored in that variable. A note about variables is that by default they go away when you switch to a different page. If I were to hit the Refresh button in Chrome, for example, my `dogSentence` variable would get wiped and it would be like it never existed. But don't worry about this too much for now &mdash; you can just hit the up or down arrows on your keyboard while in the console to go through everything you've entered in recently.
+                      Si vous tapez simplement le nom d’une variable dans la console elle va vous afficher la valeur stockée dans cete variable. À propos des variables il faut noter que par défaut elle disparaissent quand on change de page. Si vous cliquer le bouton Actualiser de Chrome, par exemple, ma variable 'phraseDeChien' serait effacée et ce serait comme si elle n’avait jamais existé.
 
-                      ### <a id="functions" href="#functions">#</a> Functions
+                      ### <a id="functions" href="#functions">#</a> Les fonctions
 
-                      Now that we have our sentence stored in a variable let's give that variable to something that will replace words! We call things that perform actions like this **functions** because, well, they serve a specific *function* (AKA purpose or action) for us. Calling them "actions" sounded weird I guess so they went with the word "function" instead.
+                      Maintenant que notre phrase est stockée dans une variable, donnons cette variable à un quelque chose qui va remplacer les mots&#8239;! Nous appelons les trucs qui effectue des tâches de ce type des **fonctions** car, simplement, elles ont une fonction (un objectif ou action) que nous lui demandons d’effectuer. Les appeler des «actions» aurait été étrange je suppose, ils ont donc décidé de les nommer «fonctions».
 
-                      JavaScript has a function called `replace` that does exactly what we want! Functions take in any number of values (zero, one or many) and return either nothing (`undefined`) or exactly one value (functions can't return two or more values at a time &mdash; only a single value). The `replace` function is available to use on any strings and takes in two values: the characters to take out and the characters to swap in. It gets confusing to describe these things so here is a visual example:
+                      JavaScript a une fonction nommée `replace` qui fait exactement ce que l’on veut faire&#8239;!
 
                       ![console](images/console-replace.png)
 
