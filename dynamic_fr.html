@@ -51,25 +51,23 @@
 
                       ## Ne soyez pas une poule mouillée
 
-                      <span class="right">![Chat](images/yarnify.png)</span>Vous retomberez toujours sur vos pattes — même en programmation&#8239;! Ce n’est pas comme de [renverser un verre d’eau](images/dealwithit.gif) sur votre portable, dans ces tutoriels _rien_ n’abimera ou ne détruira votre ordinateur, même si vous ne tapez pas bien une commande ou même si vous cliquez sur le mauvais bouton. Comme les chats, les développeurs font des erreurs tout le temps: des fautes de frappes, ils oublient facilement les guillemets, les parenthèses et comment marchent les fonctions les plus simples. Les développeurs s’intéressent plus à obtenir _finalement_ un truc qui marche plutôt qu’à le faire marcher du premier coup. La meilleure manière d’apprendre est en faisant des erreurs&#8239;!
+                      <span class="right">![Chat](images/yarnify.png)</span>Vous retomberez toujours sur vos pattes — même en programmation&#8239;! Ce n’est pas comme de [renverser un verre d’eau](images/dealwithit.gif) sur votre portable, dans ces tutoriels _rien_ n’abimera ou ne détruira votre ordinateur, même si vous ne tapez pas bien une commande ou même si vous cliquez sur le mauvais bouton. Comme les chats, les développeurs font des erreurs tout le temps: des fautes de frappes, ils oublient facilement les guillemets, les parenthèses et comment marchent les fonctions les plus simples. Les développeurs s’intéressent plus à obtenir _à la longue_ un truc qui marche plutôt qu’à le faire marcher du premier coup. La meilleure manière d’apprendre est en faisant des erreurs&#8239;!
 
                       Donc, ne soyez pas une poule mouillée&#8239;! La pire chose qu’il puisse vous arriver si vous êtes bloqué est que vous ayez à actualiser cette page. Ne vous inquiétez pas cependant, cela arrivera très rarement.
 
                       ## <a id="basics" href="#basics">#</a> Les bases
 
-                      Du JavaScript tourne actuellement sur cette page&#8239;! Amusons-nous un peu avec. Pour des raisons de simplicité
-                      je pars du principe que vous utilisez Google Chrome pour lire cette page (si ce n’est pas le cas ce serait peut-être plus simple que vous poursuiviez avec Chrome).
+                      Du JavaScript tourne actuellement sur cette page&#8239;! Amusons-nous un peu avec. Pour des raisons de simplicité je pars du principe que vous utilisez Google Chrome pour lire cette page (si ce n’est pas le cas ce serait peut-être plus simple que vous poursuiviez avec Chrome).
 
                       Pour commencer, un clic droit n’importe ou sur l’écran et sélectionnez **Procéder à l’inspection de l’élément**, puis cliquez sur l’onglet **Console**. Vous devriez voir quelques chose qui ressemble à ça :
 
                       ![console](images/console_fr.png)
 
-                      C’est une console, connue aussi sous le nom de «ligne de commande» ou «terminal». Un moyen simple de taper
-                      une chose après l’autre dans un ordinateur pour que l’ordinateur réponde. C’est un outil indispensable pour apprendre (j’utilise la console quasiment à chaque fois que je code).
+                      C’est une console, connue aussi sous le nom de «ligne de commande» ou «terminal». Un moyen simple de taper une chose après l’autre dans un ordinateur pour que l’ordinateur réponde. C’est un outil indispensable pour apprendre (j’utilise la console quasiment à chaque fois que je code).
 
-                      La console fait des trucs assez cools. Dans l’exemple précédent, j’ai commencé à taper quelque chose et la console m’assiste en me donnant une liste des choses que je peux taper&#8239;! Autre chose que vous pouvez faire c’est de taper `1 + 1` dans la console, de taper la touche `Entrée` et d’observer ce qu’il se passe.
+                      La console fait des trucs assez sympas. Dans l’exemple précédent, j’ai commencé à taper quelque chose et la console m’aide en me donnant une liste des choses que je peux taper&#8239;! Autre chose que vous pouvez faire c’est de taper `1 + 1` dans la console, de taper la touche `Entrée` et d’observer ce qu’il se passe.
 
-                      L’utilisation de la console est important dans l’apprentissage de JavaScript. Si vous ne savez pas si un truc marche ou quelle est la commande pour un truc en particulier, allez à la console et découvrez-le&#8239;! Voici un exemple:
+                      L’utilisation de la console est important dans l’apprentissage de JavaScript. Si vous ne savez pas si un truc marche ou quelle est la commande pour un truc en particulier, allez dans la console et découvrez-le&#8239;! Voici un exemple:
 
                       ### <a id="strings" href="#strings">#</a> Les chaînes
 
@@ -90,27 +88,29 @@
 
                       ![console](images/console-variables.png)
 
-                      `var`est un raccourci pour variable et le `=` signifie que l’on *stocke le truc situé à droite dans le truc de gauche*. Et comme vous pouvez voir, alors que nous enregistrons notre phrase dans une variable la console ne nous renvoit pas la phrase, mais nous balance un `undefined` ce qui signifie `rien a renvoyer`.
+                      `var`est un raccourci pour variable et le `=` signifie que l’on *stocke le truc situé à droite dans le truc de gauche*. Et comme vous pouvez voir, alors que nous enregistrons notre phrase dans une variable la console ne nous renvoit pas la phrase, mais nous balance un `undefined` ce qui signifie *rien a renvoyer*.
 
                       Si vous tapez simplement le nom d’une variable dans la console elle va vous afficher la valeur stockée dans cete variable. À propos des variables il faut noter que par défaut elle disparaissent quand on change de page. Si vous cliquer le bouton Actualiser de Chrome, par exemple, ma variable 'phraseDeChien' serait effacée et ce serait comme si elle n’avait jamais existé.
 
                       ### <a id="functions" href="#functions">#</a> Les fonctions
 
-                      Maintenant que notre phrase est stockée dans une variable, donnons cette variable à un quelque chose qui va remplacer les mots&#8239;! Nous appelons les trucs qui effectue des tâches de ce type des **fonctions** car, simplement, elles ont une fonction (un objectif ou action) que nous lui demandons d’effectuer. Les appeler des «actions» aurait été étrange je suppose, ils ont donc décidé de les nommer «fonctions».
+                      Maintenant que notre phrase est stockée dans une variable, donnons cette variable à un truc qui va remplacer les mots&#8239;! Nous appelons les trucs qui effectue des tâches de ce type des **fonctions** car, simplement, elles ont une fonction (comme un objectif à atteindre ou action particulière) que nous lui demandons d’effectuer. Les appeler des «actions» faisait bizarre je suppose, ils ont donc décidé que ce serait «fonctions».
 
                       JavaScript a une fonction nommée `replace` qui fait exactement ce que l’on veut faire&#8239;!
 
                       ![console](images/console-replace.png)
 
-                      Notice how the value of `dogSentence` is the same even after we run `replace` on it? This is because `replace` (and most JavaScript functions for that matter) takes the variable or value that we give it and returns a **new value** instead of modifying the thing we passed in. Since we didn't store the new variable (there is no `=` on the left side of the replace function) it just printed out the return value in our console.
 
-                      ### <a id="standard-library" href="#standard-library">#</a> The "standard library"
+                      Avez-vous constaté que la valeur de `phraseDeChien` est identique même après notre `replace` ? C’est parce que `replace` (et la plupart des fonctions du genre) prennent la variable ou la valeur qu’on lui fournit et ça renvoie une **nouvelle valeur** plutôt que de modifier le truc qu’on lui a confié. Et comme nous ne stockons pas la nouvelle variable (il n’y à pas de `=` sur la gauche de la fonction `replace`) ça nous renvoie simplement la valeur dans la console.
 
-                      You might be wondering what other functions are available in JavaScript. The answer: A TON. There are lots **built in, standard libraries** that you can learn about at MDN (A site run by Mozilla that has lotsa nifty information about web technologies). For example [here is the MDN page on JavaScript's Math object](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Math).
+                      ### <a id="standard-library" href="#standard-library">#</a> La "Bibliothèque standard"
 
-                      ### <a id="third-party-javascript" href="#third-party-javascript">#</a> Third-party JavaScript
+                      Vous devez vous demander que autres fonctions sont disponibles en JavaScript.La réponse : Une tonne. Il y a énormement de **bibliothèques standards fournies par défaut** dont il est question sur MDN (Un site largement fourni par Mozilla en infos croustillantes à propos des technologies Web). Par exemple, [voici la page MDN à propos de l’objet Math de JavaScript](https://developer.mozilla.org/fr/docs/JavaScript/Reference/Global_Objects/Math).
 
-                      There is also a lot of JavaScript code available that is **not built in**. JavaScript from third parties is usually referred to as a "library" or "plugin". One of my favorites is called **Underscore.js**. Let's go and grab it and load it into our page! First go to the Underscore site, [http://underscorejs.org/](http://underscorejs.org/), click on the download link (I usually use development versions because they are easier to read but both will give you the same basic functionality), and then copy all the code onto your clipboard (you can use Select All from the Edit menu to select everything).
+                      ### <a id="third-party-javascript" href="#third-party-javascript">#</a> JavaScript tiers
+
+
+                      Il y a aussi un paquet de code JavaScript disponible qui n’est pas **fourni par défaut**. Habituellement on appelle «bibliothèque» ou «plugin» ce JavaScript fourni par des tiers. Un de mes favoris se nomme **Underscore.js**. Récuperons-le et chargeons-le dans nos pages ! Tout d’abord allons sur le site d’Underscore, [http://underscorejs.org/](http://underscorejs.org/), cliquez sur le lien permettant de le télécharger (je préfère habituellement utiliser la version de développement qui est plus simple à lire mais les deux versions proposent les mêmes fonctionnalités de base), enfin vous copiez tous le code affiché dans votre presse-papier (vous pouvez utiliser Tous sélectionner du menu Édition pour tout sélectionner).
 
                       ![console](images/underscore-source.png)
 
